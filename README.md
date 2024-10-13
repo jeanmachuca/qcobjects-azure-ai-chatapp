@@ -1,15 +1,15 @@
-# QCObjects New App
+# QCObjects Azure AI Chat App
 
-This is a demo of a QCObjects based front-end Progressive Web App
+This is a demo app using QCObjects Azure OpenAI API
 
 # Deploy to Netlify
 
-[![Deploy on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/QuickCorp/qcobjects-new-app)
+[![Deploy on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/QuickCorp/qcobjects-azure-ai-chatapp)
 
 
 # Open Live Demo
 
-You can view the result of this project opening [QCObjects Demo App](https://newapp.qcobjects.dev) on any browser.
+You can view the result of this project opening [QCObjects Azure AI App](https://azure.qcobjects.ai) on any browser.
 
 # Project Structure
 
@@ -49,10 +49,10 @@ The following is the project structure of a Progressive Web App made in QCObject
 In index.html file, you will find this script:
 
 ```javascript
-<script type="module" src="js/init.js"></script>
+<script type="module" src="js/init.ts"></script>
 ```
 
-In the init.js file, you will find the main front-end settings:
+In the init.ts file, you will find the main front-end settings:
 
 ```javascript
 CONFIG.set("sourceType", "module");
