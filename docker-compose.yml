@@ -8,13 +8,10 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    volumes:
-      - ./letsencrypt:/etc/letsencrypt/live/newapp.qcobjects.dev
-      - ./data:/home/qcobjects/app/data
     expose:
-      - 8080:8080
-      - 8443:8443
-      - 10300:10300
+      - 8080
+      - 8443
+      - 10300
     ports:
       - 8080:8080
       - 8443:8443
