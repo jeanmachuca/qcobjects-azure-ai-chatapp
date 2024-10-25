@@ -26,15 +26,15 @@ FROM qcobjects/qcobjects:latest
 ###
 USER root
 
-ENV XDG_RUNTIME_DIR $(id -u)
-ENV container docker
-ENV LC_ALL C
-ENV DEBIAN_FRONTEND noninteractive
+ENV XDG_RUNTIME_DIR="$(id -u)"
+ENV container=docker
+ENV LC_ALL=C
+ENV DEBIAN_FRONTEND=noninteractive
 
-LABEL MAINTAINER "Jean Machuca <jean@qcobjects.com>"
-LABEL Author "Jean Machuca <jean@qcobjects.com>"
+LABEL MAINTAINER="Jean Machuca <jean@qcobjects.com>"
+LABEL Author="Jean Machuca <jean@qcobjects.com>"
 LABEL org.opencontainers.image.authors="Jean Machuca <jean@qcobjects.com>"
-ENV container docker
+ENV container=docker
 
 RUN npm i -g qcobjects qcobjects-sdk qcobjects-cli
 
@@ -43,8 +43,8 @@ RUN mkdir -p /home/qcobjects/app && chown -R qcobjects:qcobjects /home/qcobjects
 
 #Setting the work directory
 WORKDIR /home/qcobjects/app
-ENV DOCUMENT_ROOT /home/qcobjects/app/
-ENV DATA_PATH $DOCUMENT_ROOT/data/
+ENV DOCUMENT_ROOT=/home/qcobjects/app/
+ENV DATA_PATH=$DOCUMENT_ROOT/data/
 COPY package*.json ./
 
 #Run the initial install init scripts for jasmine and cache verify
