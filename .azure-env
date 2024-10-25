@@ -1,7 +1,7 @@
 DOMAIN=localhost
 CERTIFICATE_PROVIDER=self_signed
 DEVMODE=debug
-AZURE_OPENAI_API_KEY=bebbe48b1aac4d0d9eecc0194dc43a80
+AZURE_OPENAI_API_KEY=..
 AZURE_OPENAI_ENDPOINT=https://azure-openai-services-test.openai.azure.com/
 AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o-mini
 AZURE_OPENAI_API_VERSION=2024-02-15-preview
