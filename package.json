@@ -72,6 +72,7 @@
         "prestart": "npm run publish:web",
         "cli:help": "qcobjects --help",
         "start:dev": "npm-watch start",
+        "start:ngrok": "docker run --net=host -it -e NGROK_AUTHTOKEN=$NGROK_AUTHTOKEN ngrok/ngrok:latest http https://$DOMAIN:8443 --upstream-protocol=http2",
         "build:dev": "npm-watch build",
         "tree": "tree -d --gitignore",
         "lighthouse": "lighthouse https://127.0.0.1:8443/ --quiet --chrome-flags=\"--ignore-certificate-errors\" --budget-path=./lighthouse-budget.json --output html --output-path ./lighthouse/lighthouse-report.html --view",
